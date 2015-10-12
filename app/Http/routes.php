@@ -13,9 +13,7 @@
 Route::get('/', function () {
     return view('welcome');
 });
-Route::get('discuz/forum.php',function($id = 1){
-    return $id;
-});
+Route::get('discuz/forum.php',['as' => 'index' , 'uses' => '\App\Http\Controllers\Forum\ForumController@index']);
 
 Route::group(['middleware'=>'auth'],function(){
 
