@@ -4,3 +4,4 @@ Homestead.json
 .env
 .idea
 public/discuz/data/template/*
+storage/framework/sessions/*
